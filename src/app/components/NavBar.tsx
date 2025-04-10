@@ -207,7 +207,7 @@ const Navbar = () => {
                 </Link>
               </>
             )}
-            {isAuthenticated && (
+            {/* {isAuthenticated && (
               <Link
                 href="/auth/login"
                 onClick={handleSignout}
@@ -215,7 +215,14 @@ const Navbar = () => {
               >
                 LogOut
               </Link>
-            )}
+            )} */}
+                 <Link
+                href="/auth/login"
+                onClick={handleSignout}
+                className="hover:text-gray-300 transition-colors"
+              >
+                LogOut
+              </Link>
           </div>
 
           {/* Hamburger Button (Mobile) */}
